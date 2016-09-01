@@ -1,0 +1,80 @@
+// Graphs
+
+.graph {
+  font-family: 'HelveticaNeue','Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+}
+
+.graph1-0,
+.graph2-0,
+.graph3-0 {
+  fill: #58938a;
+}
+
+.graph1-1,
+.graph2-1,
+.graph3-1 {
+  fill: #935fa7;
+}
+
+.graph1-2,
+.graph2-2,
+.graph3-2 {
+  fill: #3d77ba;
+}
+
+.graph1-3,
+.graph2-3,
+.graph3-3 {
+  fill: #a4c686;
+}
+
+.graph1-4,
+.graph2-4,
+.graph3-4 {
+  fill: #e19e40;
+}
+
+.graph1-5,
+.graph2-5,
+.graph3-5 {
+  fill: transparent;
+}
+
+.graph1-5:hover,
+.graph2-5:hover {
+  fill: rgba(0,0,0,.1);
+}
+
+.graph :focus .graph1-5 {
+  stroke: rgba(0,0,255,.5);
+  stroke-width: 3;
+}
+
+.graph :active .graph1-5 {
+  stroke: rgba(255,0,0,.5);
+  stroke-width: 3;
+}
+
+.graph2-link,
+.graph3-link {
+  display: inline-block;
+}
+
+
+// pass / fail
+
+.pass,
+.fail {
+  display: inline-block;
+  border-radius: .3em;
+  padding: .2em .5em;
+}
+
+.pass {
+  background: rgba(125,200,125,.5);
+}
+
+.fail {
+  background: rgba(200,0,0,.3);
+}

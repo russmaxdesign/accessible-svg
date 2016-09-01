@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Testing SVG Accessibility - Results</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <p><a href="index.html">Back to Examples</a></p>
+    <h1>Testing SVG Accessibility - Results</h1>
+
+    <h2>Test 1</h2>
+    <p>Are SVG title and description announced to Screen Readers when
+    using line-by-line navigation?</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Browser</th>
+          <th>Reader</th>
+          <th>Ex1</th>
+          <th>Ex2</th>
+          <th>Ex3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Win/IE</td>
+          <td>NVDA</td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="fail">Fail</span></td>
+          <td><span class="pass">Pass</span></td>
+        </tr>
+        <tr>
+          <td>Win/Chrome</td>
+          <td>NVDA</td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="pass">Pass</span></td>
+        </tr>
+        <tr>
+          <td>Win/Firefox</td>
+          <td>NVDA</td>
+          <td><span class="fail">Fail</span></td>
+          <td><span class="fail">Fail</span></td>
+          <td><span class="fail">Fail</span></td>
+        </tr>
+        <tr>
+          <td>Win/IE</td>
+          <td>JAWS</td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="pass">Pass</span></td>
+        </tr>
+        <tr>
+          <td>Win/Chrome</td>
+          <td>JAWS</td>
+          <td><span class="fail">Fail</span></td>
+          <td><span class="fail">Fail</span></td>
+          <td><span class="pass">Pass</span></td>
+        </tr>
+        <tr>
+          <td>Win/Firefox</td>
+          <td>JAWS</td>
+          <td><span class="fail">Fail</span></td>
+          <td><span class="fail">Fail</span></td>
+          <td><span class="fail">Fail</span></td>
+        </tr>
+        <tr>
+          <td>OSX/Chrome</td>
+          <td>Voiceover</td>
+          <td><span class="fail">Fail</span></td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="fail">Fail</span></td>
+        </tr>
+        <tr>
+          <td>OSX/Firefox</td>
+          <td>Voiceover</td>
+          <td><span>NA</span></td>
+          <td><span>NA</span></td>
+          <td><span>NA</span></td>
+        </tr>
+        <tr>
+          <td>OSX/Safari</td>
+          <td>Voiceover</td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="pass">Pass</span></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <h2>Test 2</h2>
+    <p>Are SVG title and description announced to Screen Readers when
+    using TAB key navigation?</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Browser</th>
+          <th>Reader</th>
+          <th>Ex1</th>
+          <th>Ex2</th>
+          <th>Ex3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Win/IE</td>
+          <td>NVDA</td>
+          <td><span class="fail">Fail</span></td>
+          <td><span class="fail">Fail</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>Win/Chrome</td>
+          <td>NVDA</td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="pass">Pass</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>Win/Firefox</td>
+          <td>NVDA</td>
+          <td><span class="fail">Fail</span></td>
+          <td><span class="fail">Fail</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>Win/IE</td>
+          <td>JAWS</td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="pass">Pass</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>Win/Chrome</td>
+          <td>JAWS</td>
+          <td><span class="fail">Fail</span></td>
+          <td><span class="fail">Fail</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>Win/Firefox</td>
+          <td>JAWS</td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="fail">Fail</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>OSX/Chrome</td>
+          <td>Voiceover</td>
+          <td><span class="fail">Fail</span></td>
+          <td><span class="pass">Pass</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>OSX/Firefox</td>
+          <td>Voiceover</td>
+          <td><span>NA</span></td>
+          <td><span>NA</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>OSX/Safari</td>
+          <td>Voiceover</td>
+          <td><span class="fail">Fail</span></td>
+          <td><span class="pass">Pass</span></td>
+          <td>N/A*</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>* Nothing to receive focus</p>
+
+    <h2>Test 3</h2>
+    <p>Can users navigate using keyboard only, to alternate version via
+    link associated with SVG file?</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Browser</th>
+          <th>Reader</th>
+          <th>Ex1</th>
+          <th>Ex2</th>
+          <th>Ex3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Win/IE</td>
+          <td>-</td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="pass">Pass</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>Win/Chrome</td>
+          <td>-</td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="pass">Pass</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>Win/Firefox</td>
+          <td>-</td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="pass">Pass</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>Win/IE</td>
+          <td>NVDA</td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="fail">Fail</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>Win/Chrome</td>
+          <td>NVDA</td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="pass">Pass</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>Win/Firefox</td>
+          <td>NVDA</td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="pass">Pass</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>Win/IE</td>
+          <td>JAWS</td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="pass">Pass</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>Win/Chrome</td>
+          <td>JAWS</td>
+          <td><span class="fail">Fail</span></td>
+          <td><span class="fail">Fail</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>Win/Firefox</td>
+          <td>JAWS</td>
+          <td><span class="fail">Fail</span></td>
+          <td><span class="fail">Fail</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>OSX/Chrome</td>
+          <td>-</td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="fail">Fail</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>OSX/Firefox</td>
+          <td>-</td>
+          <td><span class="fail">Fail</span></td>
+          <td><span class="pass">Pass</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>OSX/Safari</td>
+          <td>-</td>
+          <td><span class="fail">Fail</span></td>
+          <td><span class="pass">Pass</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>OSX/Chrome</td>
+          <td>Voiceover</td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="fail">Fail</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>OSX/Firefox</td>
+          <td>Voiceover</td>
+          <td><span class="fail">Fail</span></td>
+          <td><span class="pass">Pass</span></td>
+          <td>N/A*</td>
+        </tr>
+        <tr>
+          <td>OSX/Safari</td>
+          <td>Voiceover</td>
+          <td><span class="pass">Pass</span></td>
+          <td><span class="fail">Fail</span></td>
+          <td>N/A*</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>* Nothing to receive focus</p>
+
+    <p style="margin-top: 2em;"><a href="https://github.com/russmaxdesign/accessible-svg">Github Page</a></p>
+  </div>
+
+<script src="assets/js/prism.js"></script>
+</body>
+</html>
